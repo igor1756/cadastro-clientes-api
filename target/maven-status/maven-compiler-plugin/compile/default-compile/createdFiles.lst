@@ -1,0 +1,7 @@
+com/igor/projetoclientes/service/ClienteService.class
+com/igor/projetoclientes/config/SwaggerConfig.class
+com/igor/projetoclientes/model/Cliente.class
+com/igor/projetoclientes/dto/ClienteCadastroDTO.class
+com/igor/projetoclientes/dao/ClienteDAO.class
+com/igor/projetoclientes/controller/ClienteController.class
+com/igor/projetoclientes/ProjetoClientesApplication.class

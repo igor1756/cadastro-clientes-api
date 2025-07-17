@@ -1,0 +1,7 @@
+/home/igor/projetos/projeto-clientes/src/main/java/com/igor/projetoclientes/ProjetoClientesApplication.java
+/home/igor/projetos/projeto-clientes/src/main/java/com/igor/projetoclientes/config/SwaggerConfig.java
+/home/igor/projetos/projeto-clientes/src/main/java/com/igor/projetoclientes/controller/ClienteController.java
+/home/igor/projetos/projeto-clientes/src/main/java/com/igor/projetoclientes/dao/ClienteDAO.java
+/home/igor/projetos/projeto-clientes/src/main/java/com/igor/projetoclientes/dto/ClienteCadastroDTO.java
+/home/igor/projetos/projeto-clientes/src/main/java/com/igor/projetoclientes/model/Cliente.java
+/home/igor/projetos/projeto-clientes/src/main/java/com/igor/projetoclientes/service/ClienteService.java
