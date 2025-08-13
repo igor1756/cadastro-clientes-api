@@ -91,6 +91,10 @@ mvn spring-boot:run
 - URL: `http://localhost:8080/swagger-ui.html`
 - Console H2 (se habilitado): `http://localhost:8080/h2-console`
 
+<img width="467" height="378" alt="image" src="https://github.com/user-attachments/assets/6f070315-bb6c-4594-8c61-f7f360f2f26d" />
+
+Não preencha nada, apenas clique em "Connect".
+
 ## 📚 API Endpoints
 
 ### Clientes
