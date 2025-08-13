@@ -113,15 +113,16 @@ Não preencha nada, apenas clique em "Connect".
 
 **Cadastrar cliente:**
 ```bash
-curl -X POST http://localhost:8080/api/clientes \
-  -H "Content-Type: application/json" \
+curl -X 'POST' \
+  'http://localhost:8080/api/clientes' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
   -d '{
-    "nome": "João Silva",
-    "cpf": "12345678901",
-    "email": "joao@email.com",
-    "telefone": "(11) 99999-9999",
-    "endereco": "Rua das Flores, 123"
-  }'
+  "nome": "João da Silva",
+  "cpf": "12345678901",
+  "email": "joao@example.com",
+  "dataNascimento": "1990-01-01"
+}'
 ```
 
 **Buscar cliente por CPF:**
