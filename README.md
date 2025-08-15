@@ -91,6 +91,10 @@ mvn spring-boot:run
 - URL: `http://localhost:8080/swagger-ui.html`
 - Console H2 (se habilitado): `http://localhost:8080/h2-console`
 
+<img width="467" height="378" alt="image" src="https://github.com/user-attachments/assets/6f070315-bb6c-4594-8c61-f7f360f2f26d" />
+
+Não preencha nada, apenas clique em "Connect".
+
 ## 📚 API Endpoints
 
 ### Clientes
@@ -109,15 +113,16 @@ mvn spring-boot:run
 
 **Cadastrar cliente:**
 ```bash
-curl -X POST http://localhost:8080/api/clientes \
-  -H "Content-Type: application/json" \
+curl -X 'POST' \
+  'http://localhost:8080/api/clientes' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
   -d '{
-    "nome": "João Silva",
-    "cpf": "12345678901",
-    "email": "joao@email.com",
-    "telefone": "(11) 99999-9999",
-    "endereco": "Rua das Flores, 123"
-  }'
+  "nome": "João da Silva",
+  "cpf": "12345678901",
+  "email": "joao@example.com",
+  "dataNascimento": "1990-01-01"
+}'
 ```
 
 **Buscar cliente por CPF:**
