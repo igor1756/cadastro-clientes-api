@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,6 +28,7 @@ import jakarta.validation.Valid;
 @RequestMapping("/api/clientes")
 @Tag(name = "Clientes", description = "API para gerenciamento de clientes")
 public class ClienteController {
+
     @Autowired
     private ClienteService clienteService;
 
@@ -58,6 +60,8 @@ public class ClienteController {
         try {
             // Converter o DTO para o modelo Cliente
             Cliente cliente = new Cliente(
+                // clienteDTO é o objeto recebido da requisição
+                // o DTO faz a validação dos dados do objeto
                 clienteDTO.getNome(),
                 clienteDTO.getCpf(),
                 clienteDTO.getEmail(),
@@ -83,5 +87,12 @@ public class ClienteController {
         return ResponseEntity.ok(clienteAtualizado);
     }
 
+    // deletar cliente
+    @Operation(summary = "Deletar cliente")
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletarCliente(@PathVariable Long id) {
+        clienteService.deletarCliente(id);
+        return ResponseEntity.noContent().build();
+    }
 
 }
